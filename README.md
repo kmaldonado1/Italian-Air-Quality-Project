@@ -9,11 +9,18 @@ The project is structured to provide insights into environmental data science an
 Technologies and Tools:
 
 Programming Language: Python
+
 Data Handling and Analysis: Pandas, NumPy
+
 Data Visualization: Matplotlib, Seaborn
+
 Machine Learning and Modeling: Scikit-Learn, Statsmodels (specifically SARIMAX for time series forecasting)
+
 Dimensionality Reduction: Principal Component Analysis (PCA) via Scikit-Learn
+
 Clustering Analysis: K-Means clustering
+
 Data Source: UCI Machine Learning Repository
+
 
 The combination of these tools allows for effective data manipulation, comprehensive statistical modeling, and insightful visualizations. This project is structured to provide valuable insights into environmental data science, highlighting its applications in addressing real-world air quality challenges.
