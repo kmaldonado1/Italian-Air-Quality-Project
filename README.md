@@ -1,24 +1,53 @@
-Investigating Air Quality of Italian Region using Modeling, Time Series and Clustering Analysis
+# 🌬️ Investigating Air Quality in an Italian Region  
+**Modeling • Time Series Forecasting • Clustering Analysis**
 
-In this project, we examine the air quality data sourced from the UCI database, which provides 9358 instances of hourly averaged responses from five metal oxide chemical sensors located in an Italian city from March 2004 to April 2005. The sensors measure concentrations of carbon monoxide (CO), non-methanic hydrocarbons, benzene, total nitrogen oxides (NOx), and nitrogen dioxide (NO2).
+This project explores air quality patterns in an Italian city using data sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/air+quality). It contains 9,358 hourly measurements collected between March 2004 and April 2005. The dataset includes responses from five chemical sensors that measure:
 
-Our objectives are to identify the primary contributors to air pollution, predict future concentrations of these pollutants, and explore the impact of human activities on air quality. To achieve these goals, we employ a range of analytical techniques including modeling, time series analysis, and clustering. We use principal component analysis (PCA) to facilitate the visualization of data groupings and discern patterns based on hourly and daily variations.
+- **Carbon Monoxide (CO)**
+- **Non-methanic Hydrocarbons (NMHC)**
+- **Benzene (C₆H₆)**
+- **Nitrogen Oxides (NOₓ)**
+- **Nitrogen Dioxide (NO₂)**
 
-Technologies and Tools:
+---
 
-Programming Language: Python
+## 📌 Summary of Key Insights
 
-Data Handling and Analysis: Pandas, NumPy
+- **Benzene and CO levels showed clear daily and weekly cycles**, peaking during commuting hours—suggesting strong links to traffic emissions.
+- **SARIMAX models successfully forecasted pollutant levels**, particularly for CO and NO₂, with seasonality and trends clearly captured.
+- **PCA revealed distinct variance across sensors**, helping reduce noise and highlight dominant pollutant behaviors.
+- **K-Means clustering uncovered time-based groupings**, such as weekday vs. weekend air quality profiles.
+- Visualizations enhanced interpretability of pollutant behavior across both short-term and long-term periods.
 
-Data Visualization: Matplotlib, Seaborn
+---
 
-Machine Learning and Modeling: Scikit-Learn, Statsmodels (specifically SARIMAX for time series forecasting)
+## 🧠 Methodology
 
-Dimensionality Reduction: Principal Component Analysis (PCA) via Scikit-Learn
+- **Data Cleaning & Resampling**: Managed missing values, converted timestamps, and aggregated hourly averages.
+- **Exploratory Data Analysis (EDA)**: Trend plots, heatmaps, and correlation matrices to understand pollutant behavior.
+- **Dimensionality Reduction**: PCA applied to identify main directions of variance and reduce dimensional complexity.
+- **Forecasting**: SARIMAX models used to predict future pollutant concentrations with seasonal components.
+- **Clustering**: K-Means applied to both raw and PCA-transformed data to detect temporal or behavioral clusters.
 
-Clustering Analysis: K-Means clustering
+---
 
-Data Source: UCI Machine Learning Repository
+## 🛠️ Technologies Used
 
+- **Programming Language**: Python  
+- **Libraries**:
+  - `pandas`, `numpy` – Data handling
+  - `matplotlib`, `seaborn` – Visualization
+  - `statsmodels` – Time series modeling (SARIMAX)
+  - `scikit-learn` – PCA, K-Means clustering
 
-The combination of these tools allows for effective data manipulation, comprehensive statistical modeling, and insightful visualizations. This project is structured to provide valuable insights into environmental data science, highlighting its applications in addressing real-world air quality challenges.
+---
+
+## 📂 Repository Structure
+
+📦 air-quality-analysis
+ ┣ 📊 notebooks/
+ ┃ ┗ 📓 Air_Quality_Analysis_Final.ipynb
+ ┣ 📁 data/
+ ┃ ┗ air_quality_uci.csv
+ ┗ README.md
+
