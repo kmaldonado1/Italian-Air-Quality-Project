@@ -13,10 +13,10 @@ This project explores air quality patterns in an Italian city using data sourced
 
 ## 📌 Summary of Key Insights
 
-- **Benzene and CO levels showed clear daily and weekly cycles**, peaking during commuting hours—suggesting strong links to traffic emissions.
+- **O3 and Nonmethane Hydrocarbon (NMHC) levels showed clear daily cycles**, peaking during commuting hours—suggesting strong links to traffic emissions.
 - **SARIMAX models successfully forecasted pollutant levels**, particularly for CO and NO₂, with seasonality and trends clearly captured.
 - **PCA revealed distinct variance across sensors**, helping reduce noise and highlight dominant pollutant behaviors.
-- **K-Means clustering uncovered time-based groupings**, such as weekday vs. weekend air quality profiles.
+- **K-Means clustering uncovered time-based groupings**, such as daily and monthly air quality profiles.
 - Visualizations enhanced interpretability of pollutant behavior across both short-term and long-term periods.
 
 ---
