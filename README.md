@@ -41,8 +41,3 @@ This project explores air quality patterns in an Italian city using data sourced
   - `scikit-learn` – PCA, K-Means clustering
 
 ---
-
-## 📂 Repository Structure
-
-📦 air-quality-analysis ┣ 📊 notebooks/ ┃ ┗ 📓 Air_Quality_Analysis_Final.ipynb ┣ 📁 data/ ┃ ┗ air_quality_uci.csv ┣ 📁 images/ ┃ ┗ (Optional plots or PCA visuals) ┗ README.md
-
